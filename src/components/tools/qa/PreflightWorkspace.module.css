@@ -1,0 +1,96 @@
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 600;
+  flex: none;
+  width: 120px;
+}
+
+.detail {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  flex: 1;
+}
+
+.status {
+  font-size: 16px;
+  flex: none;
+  width: 24px;
+  text-align: center;
+}
+
+.status[data-status="pass"] {
+  color: var(--color-success);
+}
+
+.status[data-status="warning"] {
+  color: var(--color-warning);
+}
+
+.status[data-status="fail"] {
+  color: var(--color-error);
+}
+
+.status[data-status="skip"] {
+  color: var(--color-text-secondary);
+}
+
+.summary {
+  display: flex;
+  gap: var(--space-4);
+  font-size: 13px;
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
+.summaryItem strong {
+  margin-right: 4px;
+}
+
+.formRow {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.checkboxGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 13px;
+}
+
+.copyButton {
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  font-size: 13px;
+  align-self: flex-start;
+}
+
+.copyButton:hover {
+  background: var(--color-surface-hover);
+}
